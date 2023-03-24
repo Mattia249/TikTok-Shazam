@@ -1,0 +1,6 @@
+# User-specific stuff
+./Include
+./Lib
+./Scripts
+
+pyvenv.cfg

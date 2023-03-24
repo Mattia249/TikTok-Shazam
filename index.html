@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mettice roba</title>
+
+	<script>
+		console.log("Cerco di aprire il socket");
+		var socket = new WebSocket("wss://andrearaguso.com:4727");
+		
+		socket.onopen = (event) => {
+			console.log("Socket opened");
+		}
+
+		function sendData(){
+			
+			socket.send("Il mio nome è John" + link);
+			
+			link = document.getElementById("link").value;
+
+			console.log(link);
+		}
+	</script>
+
+</head>
+<body>
+
+<div id="app">
+	
+	<label>Mettice il link</label><br>
+	<input type="text" id="link"><br>
+	<button onclick="sendData()">Daje</button>
+	
+</div>
+
+</body>
+</html>
