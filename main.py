@@ -8,6 +8,7 @@ import uvicorn
 
 app = FastAPI()
 
+
 @app.get("/download")
 async def download(url: str):
     with open('video.mp4', 'wb') as f:
